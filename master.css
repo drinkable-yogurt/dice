@@ -1,0 +1,114 @@
+@charset 'utf-8';
+
+h1 {
+    font-size: 200%;
+    font-weight: normal;
+    margin: 10px 20px;
+}
+
+#count, #side {
+    padding: 0.5em 5px;
+    font-size: 100%;
+    width: 70px;
+    text-align: right;
+}
+
+#dice {
+    padding: 0;
+}
+
+#dice li {
+    display: inline-block;
+    list-style: none;
+    
+    width: 40px;
+    padding: 5px 0;
+    text-align: center;
+    border: solid 1px gray;
+    color: gray;
+    margin: 3px;
+    
+    border-radius: 3px;
+}
+
+#dice .blue {
+    border-color: skyblue;
+    color: skyblue;
+}
+
+#dice .red {
+    border-color: red;
+    color: red;
+}
+
+#sum {
+    display: inline-block;
+    list-style: none;
+    font-size: 120%;
+    
+    width: 60px;
+    padding: 5px 0;
+    text-align: center;
+    border: solid 1px black;
+    color: black;
+    margin: 20px 50px 0;
+    
+    border-radius: 3px;
+}
+
+#sum.blue {
+    border-color: blue;
+    color: blue;
+}
+
+#sum.red {
+    border-color: crimson;
+    color: crimson;
+}
+
+#enter {
+    margin-left: 20px;
+    padding: 0.5em 1em;
+    background: white;
+    color: gray;
+    border: solid 1px gray;
+    border-radius: 3px;
+}
+
+#enter:active {
+    color: black;
+    border-color: black;
+}
+
+#controller {
+    color: gray;
+    margin: 10px;
+}
+
+#volume {
+    margin-right: 10px;
+}
+
+#template {
+    padding: 0;
+}
+
+#template li {
+    display: inline-block;
+    list-style: none;
+    
+    padding: 5px 10px;
+    text-align: center;
+    border: solid 1px darkgray;
+    color: darkgray;
+    margin: 3px;
+
+    font-size: 90%;
+    
+    border-radius: 3px;
+}
+
+#template li:active {
+    border-color: gray;
+    color: gray;
+}
