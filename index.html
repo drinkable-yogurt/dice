@@ -18,13 +18,19 @@
         </div>
 
         <input id="count" type="number" value="1" min="1"> d 
-        <input id="side" type="number" value="6" min="2">
-        <a id="enter">ダイスを振る</a><br>
+        <input id="side" type="number" value="6" min="2"> +
+        <input id="correction" type="number" value="0"><br><br>
+
+        <a id="enter">ダイスを振る</a>
+        <a id="invert">出目反転</a>
+
         <ul id="template">
             <li><span class="count">1</span> d <count class="side">6</count></li>
+            <li><span class="count">2</span> d <count class="side">6</count></li>
+            <li><span class="count">3</span> d <count class="side">6</count></li>
             <li><span class="count">1</span> d <count class="side">100</count></li>
         </ul>
-
+        
         <div id="sum">0</div>
         <ul id="dice"></ul><br>
 

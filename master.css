@@ -6,7 +6,7 @@ h1 {
     margin: 10px 20px;
 }
 
-#count, #side {
+#count, #side, #correction {
     padding: 0.5em 5px;
     font-size: 100%;
     width: 70px;
@@ -15,6 +15,7 @@ h1 {
 
 #dice {
     padding: 0;
+    clear: both;
 }
 
 #dice li {
@@ -42,7 +43,7 @@ h1 {
 }
 
 #sum {
-    display: inline-block;
+    display: block;
     list-style: none;
     font-size: 120%;
     
@@ -51,9 +52,12 @@ h1 {
     text-align: center;
     border: solid 1px black;
     color: black;
-    margin: 20px 50px 0;
     
+    margin: 0 5px 10px;
     border-radius: 3px;
+    
+    float: left;
+    clear: both;
 }
 
 #sum.blue {
@@ -67,7 +71,24 @@ h1 {
 }
 
 #enter {
-    margin-left: 20px;
+    margin: 0;
+    padding: 0.5em 1em;
+    background: white;
+    color: gray;
+    border: solid 1px gray;
+    border-radius: 3px;
+    float: left;
+}
+
+#enter:active {
+    color: black;
+    border-color: black;
+}
+
+#invert {
+    float: left;
+    margin: 5px 15px;
+    font-size: 90%;
     padding: 0.5em 1em;
     background: white;
     color: gray;
@@ -75,7 +96,7 @@ h1 {
     border-radius: 3px;
 }
 
-#enter:active {
+#invert:active {
     color: black;
     border-color: black;
 }
@@ -90,7 +111,9 @@ h1 {
 }
 
 #template {
+    float: left;
     padding: 0;
+    clear: both;
 }
 
 #template li {
