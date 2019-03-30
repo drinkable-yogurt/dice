@@ -45,15 +45,35 @@ function show(array) {
     $('#sum').text(sum);
 }
 
+function main() {
+    const sound = $('#sound');
+
+    sound[0].currentTime = 0;
+    sound[0].volume = $('#volume').val();
+    sound[0].play();
+
+    const count = $('#count').val();
+    const side = $('#side').val();
+
+    result = new Array(count);
+
+    for(let i = 0; i < count; i++) {
+        result[i] = dice(side);
+    }
+
+    console.log(result);
+    show(result);
+}
+
 let result;
 
 $(function() {
-    const sound = $('#sound');
-
+    
     $('#template li').on('click', function() {
         $('#count').val(parseInt($(this).children('.count').text()));
         $('#side').val(parseInt($(this).children('.side').text()));
         $('#correction').val(0);
+        main();
     });
 
     $('#invert').on('click', function() {
@@ -71,20 +91,6 @@ $(function() {
     });
 
     $('#enter').on('click', function() {
-        sound[0].currentTime = 0;
-        sound[0].volume = $('#volume').val();
-        sound[0].play();
-
-        const count = $('#count').val();
-        const side = $('#side').val();
-
-        result = new Array(count);
-
-        for(let i = 0; i < count; i++) {
-            result[i] = dice(side);
-        }
-
-        console.log(result);
-        show(result);
+        main();
     });
 });
